@@ -1,0 +1,46 @@
+{
+  "error": 0,
+  "payload" : [
+    {
+      "id": 1,
+      "name": "Khlong Nonsi Water Fall",
+      "description": "",
+      "notes": "The coolest cup",
+      "openHours": "open 24 hours",
+      "address": "Ban Khlong Son Road , Ko Chang , 23170 Ko Chang , Trat, 23170, Thailand"
+    },
+    {
+      "id": 2,
+      "name": "Namtok Khlong Phlu",
+      "description": "",
+      "notes": "The most popular place",
+      "openHours": "08am-04pm",
+      "location": "Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    },
+    {
+      "id": 3,
+      "name": "Khlong Chao Lueam Waterfall",
+      "description": "",
+      "notes": "The deepest cup",
+      "openHours": "08am-08pm",
+      "address": "Ban Khlong Son Road , Ko Chang , 23170 Ko Chang , Trat, 23170, Thailand"
+    },
+    {
+      "id": 4,
+      "name": "Kai Bae Waterfall",
+      "description": "",
+      "notes": "Hard to find",
+      "openHours": "open 24 hours",
+      "address": "Kai Bae Beach, Tambon Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    },
+    {
+      "id": 5,
+      "name": "Khiri Phet Waterfall",
+      "description": "",
+      "notes": "The smallest waterfall",
+      "openHours": "open 24 hours",
+      "address": "Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    }
+  ],
+  "description": "OK"
+}

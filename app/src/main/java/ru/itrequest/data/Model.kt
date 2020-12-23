@@ -6,16 +6,11 @@ data class Waterfall(
     val description: String,
     val notes: String,
     val openHours: String,
-    val location: Location
-)
-
-data class Location(
-    val lon: Double,
-    val lat: Double
+    val address: String
 )
 
 data class WaterfallResponse(
-    val error: Int = 1,
+    val error: Int,
     val payload: List<Waterfall>,
-    val desc: String = ""
+    val desc: String
 )

@@ -9,11 +9,15 @@ import ru.itrequest.data.WaterfallResponse
 
 interface WaterfallService {
 
-    @GET("/all")
+    @GET("/v3/6d55df75-df4a-460e-a67d-e2b4f4ac85e2")
     suspend fun getAll(): WaterfallResponse
 
+    /**
+     * We use design.mocky.io for mock web service
+     * (There are test data in a waterfalls.json file)
+     */
     companion object {
-        private const val BASE = "http://blabla.com"
+        private const val BASE = "https://run.mocky.io"
 
         fun create(): WaterfallService {
             val logger = HttpLoggingInterceptor()
