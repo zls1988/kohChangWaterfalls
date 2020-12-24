@@ -36,6 +36,10 @@ class MainViewModel(
         }
 
     init {
+        loadData()
+    }
+
+    fun loadData() {
         viewModelScope.launch {
             _viewState.value = ViewState.PROCESSING
             when (val result = repository.getAll()) {

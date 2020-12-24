@@ -1,13 +1,17 @@
 package ru.itrequest
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.ProgressBar
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.Group
 import androidx.fragment.app.commit
+import com.google.android.material.textview.MaterialTextView
 import ru.itrequest.data.WaterfallRepository
 import ru.itrequest.network.WaterfallService
 import ru.itrequest.ui.WaterfallDetailFragment
@@ -26,8 +30,20 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         findViewById(R.id.contentWindow)
     }
 
-    private val loadingBar: ConstraintLayout by lazy {
-        findViewById(R.id.mainLoadingLayout)
+    private val loadingBar: ProgressBar by lazy {
+        findViewById(R.id.mainProgressBar)
+    }
+
+    private val errorGroup: Group by lazy {
+        findViewById(R.id.mainErrorGroup)
+    }
+
+    private val errorMessage: MaterialTextView by lazy {
+        findViewById(R.id.mainErrorLabel)
+    }
+
+    private val reloadButton: Button by lazy {
+        findViewById(R.id.mainReloadButton)
     }
 
     private val viewModel by viewModels<MainViewModel> {
@@ -44,8 +60,12 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     /**
      * We log a new state for debug purposes
      */
+    @SuppressLint("SetTextI18n")
     private fun setup() {
         showContent()
+        reloadButton.setOnClickListener {
+            viewModel.loadData()
+        }
         viewModel.waterfalls.observe(this) {
             Log.d(TAG, "${it.size}")
         }
@@ -54,14 +74,20 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             when (it) {
                 ViewState.PROCESSING -> {
                     loadingBar.visibility = View.VISIBLE
+                    errorGroup.visibility = View.GONE
                     Log.d(TAG, "PROCESSING")
                 }
                 ViewState.ERROR -> {
                     loadingBar.visibility = View.GONE
+                    errorGroup.visibility = View.VISIBLE
+                    contentWindow.visibility = View.INVISIBLE
+                    errorMessage.text = "An error occurred, try to reload data."
                     Log.d(TAG, "ERROR")
                 }
                 ViewState.IDLE -> {
                     loadingBar.visibility = View.GONE
+                    errorGroup.visibility = View.GONE
+                    contentWindow.visibility = View.VISIBLE
                     Log.d(TAG, "IDLE")
                 }
             }
