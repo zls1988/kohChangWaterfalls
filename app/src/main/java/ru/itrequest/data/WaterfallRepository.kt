@@ -14,7 +14,7 @@ class WaterfallRepository(private val service: WaterfallService) {
     @WorkerThread
     suspend fun getAll(): Result<List<Waterfall>, Throwable> {
         return try {
-            // Network latency imitation
+            // Delay simulation
             delay(1000)
             Result.Success(service.getAll().payload)
         } catch (e: Exception) {

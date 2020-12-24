@@ -9,7 +9,7 @@ import ru.itrequest.data.WaterfallResponse
 
 interface WaterfallService {
 
-    @GET("/v3/6d55df75-df4a-460e-a67d-e2b4f4ac85e2")
+    @GET("/v3/2bbdea4d-0fa4-497d-9994-fb6770b02a31")
     suspend fun getAll(): WaterfallResponse
 
     /**
