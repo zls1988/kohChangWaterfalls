@@ -1,0 +1,54 @@
+{
+  "error": 0,
+  "payload" : [
+    {
+      "id": 1,
+      "name": "Khlong Nonsi Water Fall",
+      "description": "In the past Klong Nonsi was another waterfall where you had to pay a few Baht to park outside someone’s house and then follow a footpath inland through fruit fields to the river.  That all changed in 2015 when a concrete road was built which takes you to the river about 50 metres from the first level of the waterfall.",
+      "notes": "The coolest cup",
+      "openHours": "open 24 hours",
+      "address": "Ban Khlong Son Road , Ko Chang , 23170 Ko Chang , Trat, 23170, Thailand"
+    },
+    {
+      "id": 2,
+      "name": "Namtok Khlong Phlu",
+      "description": "Description is not avaliable",
+      "notes": "The most popular place",
+      "openHours": "08am-04pm",
+      "address": "Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    },
+    {
+      "id": 3,
+      "name": "Khlong Chao Lueam Waterfall",
+      "description": "The last of the west coast waterfalls in this guide.  Also just known as ‘Klong Son waterfall ‘ which is far easier to say.  Ideally, you need your own transport for this, as although it is possible to walk from the main road, the waterfall is around 4 Km inland.  Getting there is easy, just take the inland road adjacent to the 7-eleven in Klong Son village.  Keep going, past Baan Kwan Chang elephant camp, until the road ends.",
+      "notes": "The deepest cup",
+      "openHours": "08am-08pm",
+      "address": "Ban Khlong Son Road , Ko Chang , 23170 Ko Chang , Trat, 23170, Thailand"
+    },
+    {
+      "id": 4,
+      "name": "Kai Bae Waterfall",
+      "description": "Now we’re getting a bit more adventurous.  This waterfall does exist – despite it not being marked on any print map of the island.  And you’ll get a real sense of being in the jungle, away from civilisation when you are there.  Following the inland track from the 7-eleven at the south end of the beach will, after 15 minutes walk along a dirt track, bring you to a few small bungalows which are available for long-term rent.  on the way you’ll see a couple of signs for the waterfall.",
+      "notes": "Hard to find",
+      "openHours": "open 24 hours",
+      "address": "Kai Bae Beach, Tambon Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    },
+    {
+      "id": 5,
+      "name": "Khiri Phet Waterfall",
+      "description": "It’s one of those places where there’s a couple of different ways to spell it in English and no-one can agree which to use.  You say ‘Kiripetch’, I say ‘Khiri Phet’.   They’re both equally correct or equally wrong, again no-one knows for sure.",
+      "notes": "The smallest waterfall",
+      "openHours": "open 24 hours",
+      "address": "Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    },
+    {
+      "id": 6,
+      "name": "Than Mayom Waterfall",
+      "description": "This is the other waterfall where visitors have to pay the National Park entrance fee.  It is located on the east coast of the island and so you will need your own transport to go there.  As such, it isn’t as busy as Than Mayom.  But it is popular with tour groups, mainly because two Thai Kings – Rama V and Rama VI, visited the falls in the past and carved their names onto the rocks.  The falls themselves are good for a swim but, unless you’re an ardent Thai royalist, aren’t really worth a visit given the entrance fee.",
+      "notes": "Fee is a 200 Batt",
+      "openHours": "10am-10pm",
+      "address": "Ko Chang, Ko Chang District, Trat 23170, Thailand"
+    }
+  ],
+  "description": "OK"
+}

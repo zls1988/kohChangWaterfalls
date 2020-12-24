@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/topDetailViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        android:background="@color/design_default_color_primary" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailNameLabel"
+        style="@style/TextAppearance.MaterialComponents.Headline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingHorizontal="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/topDetailViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Khlong Nonsi Waterfall" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/topDetailViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Address: Rural Road , Ko Chang , 23170 Ko Chang , Trat, 23170, Thailand"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailOpenHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/detailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Open hours: 08AM-04PM"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="4dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintTop_toBottomOf="@id/detailOpenHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Description:\nNice Views! But Swimming is not fun enough for adults ! But minors are good to be here!"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="4dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/detailDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Note: Hours or services may differ"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="detailAddress, detailDescription, detailNote, detailOpenHours"
+        android:id="@+id/detailContentGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
